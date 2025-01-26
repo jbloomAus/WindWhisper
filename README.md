@@ -17,7 +17,7 @@ This tool allows you to record audio and automatically transcribe it to text usi
 
 2. The tool will start and wait for your commands. You have two main hotkey combinations:
 
-   - **Cmd+Shift+R** (Mac) or **Ctrl+Shift+R** (Windows/Linux)
+   - **Ctrl+Space** (All platforms)
      - Press to start recording
      - While recording, press 'Esc' to stop recording
      - The transcription will automatically begin after stopping
