@@ -12,7 +12,7 @@ This tool allows you to record audio and automatically transcribe it to text usi
 
 1. Run the script:
    ```bash
-   uv run transcription_tool.py
+   uv run transcription_tool.py [--model MODEL] [--list-models]
    ```
 
 2. The tool will start and wait for your commands. You have two main hotkey combinations:
@@ -25,6 +25,26 @@ This tool allows you to record audio and automatically transcribe it to text usi
 
    - **Cmd+Shift+Q** (Mac) or **Ctrl+Shift+Q** (Windows/Linux)
      - Press to quit the application
+
+
+### Options:
+- `--model MODEL`: Choose the Whisper model to use (default: "tiny")
+  - Available options: tiny, base, small, medium, large
+  - Larger models are more accurate but require more computational resources
+
+- `--list-models`: Display all available Whisper models and exit
+
+
+### Examples
+
+```bash
+# Run with default (tiny) model
+uv run transcription_tool.py
+# Use the base model for better accuracy
+uv run transcription_tool.py --model base
+# List all available models
+uv run transcription_tool.py --list-models
+```
 
 ## Features
 - Automatic language detection
